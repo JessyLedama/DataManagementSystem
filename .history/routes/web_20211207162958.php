@@ -6,7 +6,7 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Admin\RSVPController;
 use App\Http\Controllers\Admin\CitiesController;
-use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\CitiesController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\HomeController;

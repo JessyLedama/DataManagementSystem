@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\Blog;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class BlogController extends Controller
+
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +16,9 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blogPosts = Blog::paginate();
+        $categories = Category::paginate();
 
-        return view ('admin.blog.index', compact('blogPosts'));
+        return view('admin.products.index', compact('categories'));
     }
 
     /**
@@ -27,7 +28,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        return view ('admin.blog.create');
+        return view('admin.products.create');
     }
 
     /**
@@ -38,48 +39,39 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        $blogImage = $request->file('image')->store('blog');
-        $blogPost = Blog::create([
-            'title' => $request->title,
-            'image' => $blogImage,
-            'content' => $request->content,
-        ]);
-
-        session()->flash('success', 'Your article has been posted.');
-
-        return redirect()->route('blog-list');
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Blog  $blog
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(Blog $blog)
+    public function show(Category $category)
     {
-        return view ('admin.blog.show');
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Blog  $blog
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function edit(Blog $blog)
+    public function edit(Category $category)
     {
-        return view ('admin.blog.edit');
+        //
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Blog  $blog
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Blog $blog)
+    public function update(Request $request, Category $category)
     {
         //
     }
@@ -87,10 +79,10 @@ class BlogController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Blog  $blog
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Blog $blog)
+    public function destroy(Category $category)
     {
         //
     }

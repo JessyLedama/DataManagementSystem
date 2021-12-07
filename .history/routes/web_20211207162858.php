@@ -6,7 +6,6 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Admin\RSVPController;
 use App\Http\Controllers\Admin\CitiesController;
-use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\HomeController;
@@ -138,11 +137,11 @@ Route::prefix('admin')->group(function()
     Route::post('/store-products', [ProductController::class, 'store'])->middleware('auth')->name('products-store');
 
     //Categories
-    Route::get('/categories', [CategoryController::class, 'index'])->middleware('auth')->name('categories-list');
+    Route::get('/categories', [CarModelController::class, 'index'])->middleware('auth')->name('categrs-list');
 
-    Route::get('/create-categories', [CategoryController::class, 'create'])->middleware('auth')->name('categories-create');
+    Route::get('/create-car-models', [CarModelController::class, 'create'])->middleware('auth')->name('categrs-create');
 
-    Route::post('/store-categories', [CategoryController::class, 'store'])->middleware('auth')->name('categories-store');
+    Route::post('/store-car-models', [CarModelController::class, 'store'])->middleware('auth')->name('categrs-store');
 
     //Car Conditions
     Route::get('/car-conditions', [CarConditionController::class, 'index'])->middleware('auth')->name('car-conditions-list');

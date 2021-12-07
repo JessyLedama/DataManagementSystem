@@ -153,6 +153,7 @@
                 </ul>
               </li>
 
+
               <!-- Log Out -->
               <li class="nav-item">
                 <a class="dropdown-item" href="{{ route('logout') }}"><i class="nav-icon fas fa-user"></i> Log Out</a>

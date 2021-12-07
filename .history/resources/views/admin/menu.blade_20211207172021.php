@@ -153,6 +153,228 @@
                 </ul>
               </li>
 
+              <!-- SETTINGS -->
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-cog"></i>
+                  <p>
+                    Settings
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+
+                  <!-- CATEGORIES -->
+                  <li class="nav-item">
+                    <a href="{{ route('categories-list') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        All Categories
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{{ route('categories-create') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Add Category
+                      </p>
+                    </a>
+                  </li> <hr />
+
+                  <!-- CAR PRICE TYPES -->
+                  <li class="nav-item">
+                    <a href="{{ route('car-price-list') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        All Car Price Types
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{{ route('car-price-create') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Add Car Price Type
+                      </p>
+                    </a>
+                  </li> <hr />
+
+                  <!-- CAR CONDITIONS -->
+                  <li class="nav-item">
+                    <a href="{{ route('car-conditions-list') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        All Car Conditions
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{{ route('car-conditions-create') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Add Car Condition
+                      </p>
+                    </a>
+                  </li> <hr />
+
+                  <!-- CAR BODY TYPES -->
+                  <li class="nav-item">
+                    <a href="{{ route('car-body-list') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        All Car Body Types
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{{ route('car-body-create') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Add Car Body Type
+                      </p>
+                    </a>
+                  </li> <hr />
+                
+                  <!-- CAR ENGINE TYPES -->
+                  <li class="nav-item">
+                    <a href="{{ route('car-engine-types-list') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        All Car Engine Types
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{{ route('car-engine-types-create') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Add Car Engine Type
+                      </p>
+                    </a>
+                  </li> <hr />
+
+                  <!-- CAR ENGINE SIZES -->
+                  <li class="nav-item">
+                    <a href="{{ route('car-engine-sizes-list') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        All Car Engine Sizes
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{{ route('car-engine-sizes-create') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Add Car Engine Size
+                      </p>
+                    </a>
+                  </li> <hr />
+
+                  <!-- CAR TRANSMISSIONS -->
+                  <li class="nav-item">
+                    <a href="{{ route('car-transmission-types-list') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        All Car Transmissions
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{{ route('car-transmission-types-create') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Add Car Transmission
+                      </p>
+                    </a>
+                  </li> <hr />
+
+                  <!-- CAR COLORS -->
+                  <li class="nav-item">
+                    <a href="{{ route('car-colors-list') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        All Car Colors
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{{ route('car-colors-create') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Add Car Color
+                      </p>
+                    </a>
+                  </li> <hr />
+
+                  <!-- CITIES -->
+                  <li class="nav-item">
+                    <a href="{{ route('cities-list') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        All Cities
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{{ route('cities-create') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Add City
+                      </p>
+                    </a>
+                  </li> <hr />
+
+                  <!-- INSURANCE COVER TYPES -->
+                  <li class="nav-item">
+                    <a href="{{ route('cover-types-list') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        All Insurance Cover Types
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{{ route('cover-types-create') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Add Insurance Cover Type
+                      </p>
+                    </a>
+                  </li> <hr />
+
+                  <!-- USERS -->
+                  <li class="nav-item">
+                    <a href="{{ route('all-users') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        All Users
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{{ route('create-user') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Add User
+                      </p>
+                    </a>
+                  </li> <hr />
+                </ul>
+              </li>
+
               <!-- Log Out -->
               <li class="nav-item">
                 <a class="dropdown-item" href="{{ route('logout') }}"><i class="nav-icon fas fa-user"></i> Log Out</a>
