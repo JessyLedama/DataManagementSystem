@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\Cities;
+use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class CitiesController extends Controller
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,9 @@ class CitiesController extends Controller
      */
     public function index()
     {
-        $cities = Cities::paginate();
+        $products = Product::paginate();
 
-        return view('admin.settings.cities.index', compact('cities')); 
+        return view('admin.products.index', compact('products'));
     }
 
     /**
@@ -27,7 +27,7 @@ class CitiesController extends Controller
      */
     public function create()
     {
-        return view('admin.settings.cities.create');
+        return view('admin.products.cities.create');
     }
 
     /**
@@ -38,22 +38,16 @@ class CitiesController extends Controller
      */
     public function store(Request $request)
     {
-        $cities = Cities::create([
-            'name' => $request->name,
-        ]);
-
-        session()->flash('success', $cities->name.' has been saved.');
-
-        return redirect()->route('cities-list');
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Cities  $cities
+     * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Cities $cities)
+    public function show(Product $product)
     {
         //
     }
@@ -61,10 +55,10 @@ class CitiesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Cities  $cities
+     * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function edit(Cities $cities)
+    public function edit(Product $product)
     {
         //
     }
@@ -73,10 +67,10 @@ class CitiesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Cities  $cities
+     * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Cities $cities)
+    public function update(Request $request, Product $product)
     {
         //
     }
@@ -84,10 +78,10 @@ class CitiesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Cities  $cities
+     * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Cities $cities)
+    public function destroy(Product $product)
     {
         //
     }

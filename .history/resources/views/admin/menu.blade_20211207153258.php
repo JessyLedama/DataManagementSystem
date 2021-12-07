@@ -61,7 +61,7 @@
         <!-- Brand Logo -->
         <a href="/" class="brand-link">
           <img src="../img/logo.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-          <span class="brand-text font-weight-light">DMS</span>
+          <span class="brand-text font-weight-light">Carbazaar</span>
         </a>
 
         <!-- Sidebar -->
@@ -100,6 +100,15 @@
                   </p>
                 </a>
               </li>
+            
+              <!-- <li class="nav-item">
+                <a href="my-message.html" class="nav-link">
+                  <i class="nav-icon fas fa-envelope"></i>
+                  <p>
+                    My Messages
+                  </p>
+                </a>
+              </li> -->
 
               <!-- MY INVENTORY -->
               <li class="nav-item">
@@ -111,25 +120,40 @@
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
-
-                  <!-- PRODUCTS -->
                   <li class="nav-item">
-                    <a href="{{ route('products-list') }}" class="nav-link">
+                    <a href="published-ads.html" class="nav-link">
                       <i class="nav-icon fas fa-chevron-right"></i>
                       <p>
-                        All Produts
+                        Published Ads
                       </p>
                     </a>
                   </li>
-
                   <li class="nav-item">
-                    <a href="{{ route('products-create') }}" class="nav-link">
+                    <a href="expire-ads.html" class="nav-link">
                       <i class="nav-icon fas fa-chevron-right"></i>
                       <p>
-                        Add Produts
+                        Expire Ads
                       </p>
                     </a>
-                  </li> <hr />
+                  </li>
+                
+                  <li class="nav-item">
+                    <a href="sold-ads.html" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Sold Ads
+                      </p>
+                    </a>
+                  </li>
+                
+                  <li class="nav-item">
+                    <a href="pending-ads.html" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Pending Ads
+                      </p>
+                    </a>
+                  </li>
                 </ul>
               </li>
 
@@ -196,6 +220,25 @@
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
+
+                  <!-- PRODUCTS -->
+                  <li class="nav-item">
+                    <a href="{{ route('products-list') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        All Produts
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{{ route('products-create') }}" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Add Produts
+                      </p>
+                    </a>
+                  </li> <hr />
 
                   <!-- CAR MODELS -->
                   <li class="nav-item">

@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Admin\RSVPController;
 use App\Http\Controllers\Admin\CitiesController;
 use App\Http\Controllers\Admin\AdminController;
-use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\BlogController;
 
@@ -130,11 +129,11 @@ Route::prefix('admin')->group(function()
     Route::get('/settings', [AdminController::class, 'settings'])->middleware('auth')->name('settings');
 
     //Products
-    Route::get('/products', [ProductController::class, 'index'])->middleware('auth')->name('products-list');
+    Route::get('/products', [CarMakeController::class, 'index'])->middleware('auth')->name('car-makes-list');
 
-    Route::get('/create-products', [ProductController::class, 'create'])->middleware('auth')->name('products-create');
+    Route::get('/create-car-makes', [CarMakeController::class, 'create'])->middleware('auth')->name('car-makes-create');
 
-    Route::post('/store-products', [ProductController::class, 'store'])->middleware('auth')->name('products-store');
+    Route::post('/store-car-makes', [CarMakeController::class, 'store'])->middleware('auth')->name('car-makes-store');
 
     //Car Models
     Route::get('/car-models', [CarModelController::class, 'index'])->middleware('auth')->name('car-models-list');

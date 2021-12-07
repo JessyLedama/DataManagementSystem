@@ -101,19 +101,8 @@
                 </a>
               </li>
 
-              <!-- MY INVENTORY -->
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-server"></i>
-                  <p>
-                    Inventory
-                    <i class="fas fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-
-                  <!-- PRODUCTS -->
-                  <li class="nav-item">
+              <!-- MY INVENTORY --><!-- PRODUCTS -->
+                                <li class="nav-item">
                     <a href="{{ route('products-list') }}" class="nav-link">
                       <i class="nav-icon fas fa-chevron-right"></i>
                       <p>
@@ -130,6 +119,51 @@
                       </p>
                     </a>
                   </li> <hr />
+
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-server"></i>
+                  <p>
+                    Inventory
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="published-ads.html" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Published Ads
+                      </p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="expire-ads.html" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Expire Ads
+                      </p>
+                    </a>
+                  </li>
+                
+                  <li class="nav-item">
+                    <a href="sold-ads.html" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Sold Ads
+                      </p>
+                    </a>
+                  </li>
+                
+                  <li class="nav-item">
+                    <a href="pending-ads.html" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Pending Ads
+                      </p>
+                    </a>
+                  </li>
                 </ul>
               </li>
 

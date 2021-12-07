@@ -111,25 +111,40 @@
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
-
-                  <!-- PRODUCTS -->
                   <li class="nav-item">
-                    <a href="{{ route('products-list') }}" class="nav-link">
+                    <a href="published-ads.html" class="nav-link">
                       <i class="nav-icon fas fa-chevron-right"></i>
                       <p>
-                        All Produts
+                        Published Ads
                       </p>
                     </a>
                   </li>
-
                   <li class="nav-item">
-                    <a href="{{ route('products-create') }}" class="nav-link">
+                    <a href="expire-ads.html" class="nav-link">
                       <i class="nav-icon fas fa-chevron-right"></i>
                       <p>
-                        Add Produts
+                        Expire Ads
                       </p>
                     </a>
-                  </li> <hr />
+                  </li>
+                
+                  <li class="nav-item">
+                    <a href="sold-ads.html" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Sold Ads
+                      </p>
+                    </a>
+                  </li>
+                
+                  <li class="nav-item">
+                    <a href="pending-ads.html" class="nav-link">
+                      <i class="nav-icon fas fa-chevron-right"></i>
+                      <p>
+                        Pending Ads
+                      </p>
+                    </a>
+                  </li>
                 </ul>
               </li>
 
