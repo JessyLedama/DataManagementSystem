@@ -109,7 +109,13 @@
             $user = Auth::user();
         @endphp
 
-        <footer>
-            @extends('layouts/footer')
-        </footer>
+        @if(Auth::check())
+            @if($user->name == $Admin->name)
+                <footer>
+                    @extends('layouts/admin_footer')
+                </footer>
+            @else
+                
+            @endif
+        @endif    
         

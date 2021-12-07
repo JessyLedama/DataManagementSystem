@@ -110,6 +110,6 @@
         @endphp
 
         <footer>
-            @extends('layouts/footer')
-        </footer>
+                    @extends('layouts/footer')
+                </footer>
         
