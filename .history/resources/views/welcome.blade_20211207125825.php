@@ -32,11 +32,18 @@
         <div class="container">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="/">
+                    <a href="https://mobiri.se">
                         <img src="{{ asset('img/logo.png') }}" alt="Mobirise" style="height: 8rem;">
                     </a>
                 </span>
                 <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7" href="https://mobiri.se">DMS</a></span>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobirise.com">Menu Item 1</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobirise.com">
+                            Menu Item 2</a>
+                    </li></ul>
             </div>
         </div>
     </nav>
@@ -44,7 +51,9 @@
 </section>
 
 <section data-bs-version="5.1" class="header1 cid-s48MCQYojq mbr-fullscreen mbr-parallax-background" id="header1-f">
+
     
+
     <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(255, 255, 255);"></div>
 
     <div class="align-center container">

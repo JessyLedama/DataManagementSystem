@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="manifest" href="site.webmanifest">
-        <link rel="shortcut icon" href="{{ asset('img/logo.png') }}" type="image/x-icon"/>
+        <link rel="shortcut icon" href="{{ asset('img/log.png') }}" type="image/x-icon"/>
         <!-- All css file -->
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
