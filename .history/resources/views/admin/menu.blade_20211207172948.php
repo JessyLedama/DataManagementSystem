@@ -150,21 +150,21 @@
                     </a>
                   </li> <hr />
 
-                  <!-- CITIES -->
+                  <!-- PRODUCTS -->
                   <li class="nav-item">
-                    <a href="{{ route('cities-list') }}" class="nav-link">
+                    <a href="{{ route('products-list') }}" class="nav-link">
                       <i class="nav-icon fas fa-chevron-right"></i>
                       <p>
-                        All Cities
+                        All Produts
                       </p>
                     </a>
                   </li>
 
                   <li class="nav-item">
-                    <a href="{{ route('cities-create') }}" class="nav-link">
+                    <a href="{{ route('products-create') }}" class="nav-link">
                       <i class="nav-icon fas fa-chevron-right"></i>
                       <p>
-                        Add City
+                        Add Produts
                       </p>
                     </a>
                   </li> <hr />

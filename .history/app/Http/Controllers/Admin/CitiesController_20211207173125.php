@@ -27,7 +27,7 @@ class CitiesController extends Controller
      */
     public function create()
     {
-        return view('admin.cities.create');
+        return view('admin.settings.cities.create');
     }
 
     /**

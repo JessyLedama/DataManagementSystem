@@ -161,7 +161,7 @@
                   </li>
 
                   <li class="nav-item">
-                    <a href="{{ route('cities-create') }}" class="nav-link">
+                    <a href="{{ route('products-create') }}" class="nav-link">
                       <i class="nav-icon fas fa-chevron-right"></i>
                       <p>
                         Add City
