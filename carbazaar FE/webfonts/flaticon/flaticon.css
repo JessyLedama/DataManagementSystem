@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?a6ed0a12c45833f3a7f661cff3ea10b1") format("truetype"),
+url("./flaticon.woff?a6ed0a12c45833f3a7f661cff3ea10b1") format("woff"),
+url("./flaticon.woff2?a6ed0a12c45833f3a7f661cff3ea10b1") format("woff2"),
+url("./flaticon.eot?a6ed0a12c45833f3a7f661cff3ea10b1#iefix") format("embedded-opentype"),
+url("./flaticon.svg?a6ed0a12c45833f3a7f661cff3ea10b1#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-wall-clock:before {
+    content: "\f101";
+}
+.flaticon-like:before {
+    content: "\f102";
+}
+.flaticon-calendar:before {
+    content: "\f103";
+}
+.flaticon-car:before {
+    content: "\f104";
+}
+.flaticon-dashboard:before {
+    content: "\f105";
+}
+.flaticon-maps-and-flags:before {
+    content: "\f106";
+}
+.flaticon-petrol:before {
+    content: "\f107";
+}
+.flaticon-engineering:before {
+    content: "\f108";
+}
+.flaticon-gear:before {
+    content: "\f109";
+}
+.flaticon-send:before {
+    content: "\f10a";
+}
+.flaticon-eye-open:before {
+    content: "\f10b";
+}
+.flaticon-sign-in:before {
+    content: "\f10c";
+}
+.flaticon-unlock:before {
+    content: "\f10d";
+}
+.flaticon-secure-shield:before {
+    content: "\f10e";
+}
+.flaticon-earth-globe:before {
+    content: "\f10f";
+}

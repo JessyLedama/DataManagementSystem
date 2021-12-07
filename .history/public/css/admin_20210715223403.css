@@ -1,0 +1,23 @@
+
+
+.admin-adjust {
+    margin: 0 0 0 19%;
+}
+
+.admin-form{
+    margin: 0 0 0 4% !important;
+}
+
+.mobile {
+    display: none;
+}
+
+.heading{
+    
+}
+
+@media (max-width: 767px) {
+    .mobile {
+        display: block;
+    }
+}

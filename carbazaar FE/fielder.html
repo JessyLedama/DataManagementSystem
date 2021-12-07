@@ -1,0 +1,783 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="shortcut icon" href="img/carbazaar.png" type="image/x-icon"/>
+	<!-- All css file -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/select2.min.css" />
+	<link rel="stylesheet" href="webfonts/flaticon/flaticon.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/dropzone.css" />
+	<link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider arrow skin 106 css*/
+        .jssora106 {display:block;position:absolute;cursor:pointer;}
+        .jssora106 .c {fill:#fff;opacity:.3;}
+        .jssora106 .a {fill:none;stroke:#000;stroke-width:350;stroke-miterlimit:10;}
+        .jssora106:hover .c {opacity:.5;}
+        .jssora106:hover .a {opacity:.8;}
+        .jssora106.jssora106dn .c {opacity:.2;}
+        .jssora106.jssora106dn .a {opacity:1;}
+        .jssora106.jssora106ds {opacity:.3;pointer-events:none;}
+
+        /*jssor slider thumbnail skin 101 css*/
+        .jssort101 .p {position: absolute;top:0;left:0;box-sizing:border-box;background:#000;}
+        .jssort101 .p .cv {position:relative;top:0;left:0;width:100%;height:100%;border:2px solid #000;box-sizing:border-box;z-index:1;}
+        .jssort101 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;visibility:hidden;}
+        .jssort101 .p:hover .cv, .jssort101 .p.pdn .cv {border:none;border-color:transparent;}
+        .jssort101 .p:hover{padding:2px;}
+        .jssort101 .p:hover .cv {background-color:rgba(0,0,0,6);opacity:.35;}
+        .jssort101 .p:hover.pdn{padding:0;}
+        .jssort101 .p:hover.pdn .cv {border:2px solid #fff;background:none;opacity:.35;}
+        .jssort101 .pav .cv {border-color:#fff;opacity:.35;}
+        .jssort101 .pav .a, .jssort101 .p:hover .a {visibility:visible;}
+        .jssort101 .t {position:absolute;top:0;left:0;width:100%;height:100%;border:none;opacity:.6;}
+        .jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
+    </style>
+</head>
+<body>
+<!-- ****** Header start ****** -->
+<header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg navbar-light ">
+				  <div class="container-fluid">
+				    <a class="navbar-brand" href="#"><img src="img/carbazaar.png"></a>
+				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				      <span class="navbar-toggler-icon"></span>
+				    </button>
+				    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				        <li class="nav-item">
+				          <a class="nav-link"href="search-cars.html">Search Cars</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link"href="sell-your-car.html">Sell your car</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link" href="car-insurance.html">Car insurance</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link" href="about-us.html">About us</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link" href="contact-us.html">Contact us</a>
+				        </li>
+				      </ul>
+				      <div class="d-flex">
+				        <li class="nav-item dropdown">
+				          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				            <i class="fas fa-user"></i>
+				          </a>
+				          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				            <li><a class="dropdown-item" href="dashboard/index.html">Account</a></li>
+				            <li><a class="dropdown-item" href="login.html">Log Out</a></li>
+				            <li><a class="dropdown-item" href="register.html">Register</a></li>
+				          </ul>
+				        </li>
+				      </div>
+				    </div>
+				  </div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- ****** Header end ****** -->
+
+<section class="fielder-ads pt-5 bg-light">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 offset-lg-2 text-center">
+				<img src="img/abc-ad-here-1.png">
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- breadcrumb Start-->
+<div class="breadcrumb-area bg-light pt-5">
+	<div class="container">
+	  <div class="row">
+	    <div class="col-md-12">
+	      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+	        <ol class="breadcrumb">
+	          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+	          <li class="breadcrumb-item active" aria-current="page">Fielder</li>
+	        </ol>
+	      </nav>
+	    </div>
+	  </div>
+	</div>
+</div>
+<!-- breadcrumb End-->
+
+<div class="fielder-content bg-light">
+	<div class="container">
+		<div class="row">
+			<!-- fielder-left-content Start -->
+			<div class="col-lg-8">
+				<div class="fielder-left-content">
+					<div class="fielder-left-heading mb-4">
+						<h3>Toyota fielder</h3>
+						<ul>
+							<li><span>June 8, 2021</span></li>
+							<li>Views: <span>24 </span></li>
+							<li>Add to Compare</li>
+						</ul>
+					</div>
+					<!-- Slider area Start -->
+					<div class="fielder-left-slider">
+						<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:680px;overflow:hidden;visibility:hidden;">
+				        	<!-- Loading Screen -->
+					        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+					            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+					        </div>
+					        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:580px;overflow:hidden;">
+					            <div>
+					                <img data-u="image" src="img/slide/f1.jpg" />
+					                <img data-u="thumb" src="img/slide/f1.jpg" />
+					            </div>
+					            <div>
+					                <img data-u="image" src="img/slide/f2.jpg" />
+					                <img data-u="thumb" src="img/slide/f2.jpg" />
+					            </div>
+					            <div>
+					                <img data-u="image" src="img/slide/f3.jpg" />
+					                <img data-u="thumb" src="img/slide/f3.jpg" />
+					            </div>
+					            <div>
+					                <img data-u="image" src="img/slide/f4.jpg" />
+					                <img data-u="thumb" src="img/slide/f4.jpg" />
+					            </div>
+					            <div>
+					                <img data-u="image" src="img/slide/f5.jpg" />
+					                <img data-u="thumb" src="img/slide/f5.jpg" />
+					            </div>
+					            <div>
+					                <img data-u="image" src="img/slide/f6.jpg" />
+					                <img data-u="thumb" src="img/slide/f6.jpg" />
+					            </div>
+					            
+					        </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">web animation</a>
+					        <!-- Thumbnail Navigator -->
+					        <div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;bottom:0px;width:980px;height:100px;background-color:#fff;" data-autocenter="1" data-scale-bottom="0.75">
+					            <div data-u="slides">
+					                <div data-u="prototype" class="p" style="width:190px;height:90px;">
+					                    <div data-u="thumbnailtemplate" class="t"></div>
+					                    <svg viewbox="0 0 16000 16000" class="cv">
+					                        <circle class="a" cx="8000" cy="8000" r="3238.1"></circle>
+					                        <line class="a" x1="6190.5" y1="8000" x2="9809.5" y2="8000"></line>
+					                        <line class="a" x1="8000" y1="9809.5" x2="8000" y2="6190.5"></line>
+					                    </svg>
+					                </div>
+					            </div>
+					        </div>
+					        <!-- Arrow Navigator -->
+					        <div data-u="arrowleft" class="jssora106" style="width:55px;height:55px;top:280px;left:30px;" data-scale="0.75">
+					            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+					                <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+					                <polyline class="a" points="7930.4,5495.7 5426.1,8000 7930.4,10504.3 "></polyline>
+					                <line class="a" x1="10573.9" y1="8000" x2="5426.1" y2="8000"></line>
+					            </svg>
+					        </div>
+					        <div data-u="arrowright" class="jssora106" style="width:55px;height:55px;top:280px;right:30px;" data-scale="0.75">
+					            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+					                <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+					                <polyline class="a" points="8069.6,5495.7 10573.9,8000 8069.6,10504.3 "></polyline>
+					                <line class="a" x1="5426.1" y1="8000" x2="10573.9" y2="8000"></line>
+					            </svg>
+					        </div>
+					    </div>
+					</div>
+					<!-- Slider area End -->
+
+					<!-- left-icon-list start -->
+					<div class="left-icon-list">
+						<div class="icon-box">
+							<i style="color: #0083c9;" class="flaticon-petrol"></i>
+							<p>Petrol</p>
+						</div>
+						<div class="icon-box">
+							<i style="color: #00a651;" class="flaticon-dashboard"></i>
+							<p>70,000 km</p>
+						</div>
+						<div class="icon-box">
+							<i style="color: #ff9b30;" class="flaticon-engineering"></i>
+							<p>1500 cc</p>
+						</div>
+						<div class="icon-box">
+							<i style="color: #e52d27;" class="flaticon-calendar"></i>
+							<p>2014</p>
+						</div>
+						<div class="icon-box">
+							<i style="color: #ff5700;" class="flaticon-secure-shield"></i>
+							<p>Automatic</p>
+						</div>
+						<div class="icon-box">
+							<i style="color: #785edd;" class="flaticon-car"></i>
+							<p>Wagon</p>
+						</div>
+						<div class="icon-box">
+							<i style="color: #e4405f;" class="flaticon-gear"></i>
+							<p>Grey</p>
+						</div>
+					</div>
+					<!-- left-icon-list End -->
+
+					<!-- left-fielder-desc Start -->
+					<div class="left-fielder-desc">
+						<h3>Description</h3>
+						<div class="row">
+							<div class="col-lg-4">
+								<ul>
+									<li><span>Make, Model </span>: Toyota Fielder</li>
+									<li><span>Price </span> : Kshs. 1,340,000(Negotiable) </li>
+									<li><span>Condition </span> : New </li>
+									<li><span>Body Type </span> : Wagon </li>
+									<li><span>Engine Type </span>: Petrol  </li>
+									<li><span>Location </span> : Nairobi </li>
+								</ul>
+							</div>
+							<div class="col-lg-4">
+								<ul>
+									<li><span>Date </span>: June 8, 2021 </li>
+									<li><span>Type  </span> : Sell</li>
+									<li><span>Transmission  </span> : Automatic </li>
+									<li><span>Color  </span> : Grey </li>
+								</ul>
+							</div>
+							<div class="col-lg-4">
+								<ul>
+									<li><span>Mileage  </span>: 70000 km</li>
+									<li><span>Year  </span> : 2014</li>
+									<li><span>Engine Size </span> : 1500 cc </li>
+								</ul>
+							</div>
+						</div>
+						<p>Fully loaded</p>
+						<p>Buy and drive </p>
+						<!-- Social Share button Start-->
+						<div class="a2a_kit a2a_kit_size_32 a2a_default_style mt-4 pb-4" data-a2a-url="https://carbazaar.co.ke/">
+							<a class="a2a_button_facebook"></a>
+							<a class="a2a_button_twitter"></a>
+							<a class="a2a_button_whatsapp"></a>
+							<a class="a2a_button_linkedin"></a>
+							<a class="a2a_button_email"></a>
+							<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+						</div>
+						<script>
+						var a2a_config = a2a_config || {};
+						a2a_config.onclick = 1;
+						</script>
+						<script async src="https://static.addtoany.com/menu/page.js"></script>
+
+						<!-- Social Share button End-->
+					</div>
+					<!-- left-fielder-desc End -->
+
+					<div class="left-fielder-features">
+						<h3>Car Features</h3>
+						<div class="row">
+							<div class="col-lg-4">
+								<ul>
+									<li>Air Bags</li>
+									<li>Navigation System</li>
+									<li>Power Steering</li>
+								</ul>
+							</div>
+							<div class="col-lg-4">
+								<ul>
+									<li>Air Conditioning</li>
+									<li>Power Locks</li>
+									<li>Power Windows</li>
+								</ul>
+							</div>
+							<div class="col-lg-4">
+								<ul>
+									<li>AM/FM Radio</li>
+									<li>Power Mirrors</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="left-fielder-share">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="share-btn">
+									<p><i class="fas fa-share-alt"></i> <span> Share</span></p>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="share-btn">
+									<p><i class="far fa-heart"></i> <span> Add to Favourites</span></p>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="share-btn">
+									<p style="border-right: none;"><i class="fas fa-exclamation-triangle"></i><span> Report</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- Featured section start -->
+					<section class="similar-cars pb-5 pt-5">
+						<div class="similar-cars-title pb-3">
+							<h3>Similar Cars For Sale In Kenya</h3>
+						</div>
+						<div class="owl-carousel owl-theme">
+
+						    <div class="item">
+						    	<!-- Featured single item start -->
+						    	<div class="featured-item">
+						    		<div class="f-image">
+						    			<img src="img/featured/IMG-20210417-WA0102-360x270.jpg">
+						    			<div class="price-tag">
+						    				<span>Kshs. 760,000 <span style="font-size: 14px;font-weight: 400">(Negotiable)</span></span>
+						    			</div>
+							    	</div>
+							    	<div class="featured-content">
+							    		<div class="category-title">
+							    			<a href="#" class="padding-cats txt-hover">Mercedes</a>
+							    			<a href="#" class="padding-cats txt-hover">B-class</a>
+							    		</div>
+							    		<div class="featured-desc">
+							    			<h3><a class="txt-hover" href="#">TOYOTA</a></h3>
+								    		<p class="location"><i class="flaticon-maps-and-flags"></i> <a class="txt-hover" href="#">Mombasa</a></p>
+								    		<ul>
+								    			<li><i class="flaticon-petrol"></i> Petrol</li>
+								    			<li><i class="flaticon-dashboard"></i> 167,000 km</li>
+								    			<li><i class="flaticon-engineering"></i> 1300 cc</li>
+								    			<li><i class="flaticon-car"></i> Hatchback	</li>
+								    			<li><i class="flaticon-gear"></i> Silver</li>
+								    		</ul>
+							    		</div>
+						    		</div>
+						    		<div class="featured-footer">
+						    			<p><i class="flaticon-calendar"></i> <span>May 25, 2021</span></p>
+						    			<ul>
+						    				<li><a href="#"><i class="flaticon-like"></i></a></li>
+						    				<li><a href="#"><i class="flaticon-send"></i></a></li>
+						    			</ul>
+						    		</div>
+						    	</div>
+						    	<!-- Featured single item End -->
+						    </div>
+
+						    <div class="item">
+						    	<!-- Featured single item start -->
+						    	<div class="featured-item">
+						    		<div class="f-image">
+						    			<img src="img/featured/IMG-20210417-WA0115-360x270.jpg">
+						    			<div class="price-tag">
+						    				<span>Kshs. 760,000 <span style="font-size: 14px;font-weight: 400">(Negotiable)</span></span>
+						    			</div>
+							    	</div>
+							    	<div class="featured-content">
+							    		<div class="category-title">
+							    			<a href="#" class="padding-cats txt-hover">Mercedes</a>
+							    			<a href="#" class="padding-cats txt-hover">B-class</a>
+							    		</div>
+							    		<div class="featured-desc">
+							    			<h3><a class="txt-hover" href="#">TOYOTA LAND</a></h3>
+								    		<p class="location"><i class="flaticon-maps-and-flags"></i> <a class="txt-hover" href="#">Mombasa</a></p>
+								    		<ul>
+								    			<li><i class="flaticon-petrol"></i> Petrol</li>
+								    			<li><i class="flaticon-dashboard"></i> 167,000 km</li>
+								    			<li><i class="flaticon-engineering"></i> 1300 cc</li>
+								    			<li><i class="flaticon-car"></i> Hatchback	</li>
+								    			<li><i class="flaticon-gear"></i> Silver</li>
+								    		</ul>
+							    		</div>
+						    		</div>
+						    		<div class="featured-footer">
+						    			<p><i class="flaticon-calendar"></i> <span>May 25, 2021</span></p>
+						    			<ul>
+						    				<li><a href="#"><i class="flaticon-like"></i></a></li>
+						    				<li><a href="#"><i class="flaticon-send"></i></a></li>
+						    			</ul>
+						    		</div>
+						    	</div>
+						    	<!-- Featured single item End -->
+						    </div>
+
+						    <div class="item">
+						    	<!-- Featured single item start -->
+						    	<div class="featured-item">
+						    		<div class="f-image">
+						    			<img src="img/featured/IMG_20210518_123535-360x270.jpg">
+						    			<div class="price-tag">
+						    				<span>Kshs. 760,000 <span style="font-size: 14px;font-weight: 400">(Negotiable)</span></span>
+						    			</div>
+							    	</div>
+							    	<div class="featured-content">
+							    		<div class="category-title">
+							    			<a href="#" class="padding-cats txt-hover">Mercedes</a>
+							    			<a href="#" class="padding-cats txt-hover">B-class</a>
+							    		</div>
+							    		<div class="featured-desc">
+							    			<h3><a class="txt-hover" href="#">TOYOTA</a></h3>
+								    		<p class="location"><i class="flaticon-maps-and-flags"></i> <a class="txt-hover" href="#">Mombasa</a></p>
+								    		<ul>
+								    			<li><i class="flaticon-petrol"></i> Petrol</li>
+								    			<li><i class="flaticon-dashboard"></i> 167,000 km</li>
+								    			<li><i class="flaticon-engineering"></i> 1300 cc</li>
+								    			<li><i class="flaticon-car"></i> Hatchback	</li>
+								    			<li><i class="flaticon-gear"></i> Silver</li>
+								    		</ul>
+							    		</div>
+						    		</div>
+						    		<div class="featured-footer">
+						    			<p><i class="flaticon-calendar"></i> <span>May 25, 2021</span></p>
+						    			<ul>
+						    				<li><a href="#"><i class="flaticon-like"></i></a></li>
+						    				<li><a href="#"><i class="flaticon-send"></i></a></li>
+						    			</ul>
+						    		</div>
+						    	</div>
+						    	<!-- Featured single item End -->
+						    </div>
+
+						    <div class="item">
+						    	<!-- Featured single item start -->
+						    	<div class="featured-item">
+						    		<div class="f-image">
+						    			<img src="img/featured/IMG_20210520_170137-360x270.jpg">
+						    			<div class="price-tag">
+						    				<span>Kshs. 760,000 <span style="font-size: 14px;font-weight: 400">(Negotiable)</span></span>
+						    			</div>
+							    	</div>
+							    	<div class="featured-content">
+							    		<div class="category-title">
+							    			<a href="#" class="padding-cats txt-hover">Mercedes</a>
+							    			<a href="#" class="padding-cats txt-hover">B-class</a>
+							    		</div>
+							    		<div class="featured-desc">
+							    			<h3><a class="txt-hover" href="#">TOYOTA LANDCRUISER J...</a></h3>
+								    		<p class="location"><i class="flaticon-maps-and-flags"></i> <a class="txt-hover" href="#">Mombasa</a></p>
+								    		<ul>
+								    			<li><i class="flaticon-petrol"></i> Petrol</li>
+								    			<li><i class="flaticon-dashboard"></i> 167,000 km</li>
+								    			<li><i class="flaticon-engineering"></i> 1300 cc</li>
+								    			<li><i class="flaticon-car"></i> Hatchback	</li>
+								    			<li><i class="flaticon-gear"></i> Silver</li>
+								    		</ul>
+							    		</div>
+						    		</div>
+						    		<div class="featured-footer">
+						    			<p><i class="flaticon-calendar"></i> <span>May 25, 2021</span></p>
+						    			<ul>
+						    				<li><a href="#"><i class="flaticon-like"></i></a></li>
+						    				<li><a href="#"><i class="flaticon-send"></i></a></li>
+						    			</ul>
+						    		</div>
+						    	</div>
+						    	<!-- Featured single item End -->
+						    </div>
+
+						</div>
+					</section>
+					<!-- Featured section End -->
+
+				</div>
+			</div>
+			<!-- fielder-left-content End -->
+
+			<!-- fielder-right-content Start -->
+			<div class="col-lg-4">
+				<div class="fielder-right-content">
+					<div class="price-sticker">
+						<h2>Kshs. 1,340,000 <span>(Negotiable)</span></h2>
+					</div>
+					<div class="right-icon-box">
+						<a href="login.html">
+							<i class="far fa-envelope"></i> <span>Contact Seller Via Email</span>
+						</a>
+					</div>
+					<div class="right-icon-box">
+						<a href="#">
+							<i style="background: #785EDD;" class="fas fa-mobile-alt"></i> <span>Click to View</span>
+						</a>
+
+					</div>
+					<div class="right-icon-box">
+						<a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+							<i style="background: #FF5700;" class="fas fa-money-bill-alt"></i> <span>Make an Offer Price</span>						
+						</a>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel"><p style="margin: 0;">Make an offer for</p>Toyota fielder</h4>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+        	<div class="col-lg-6">
+        		<label class="form-label">Your Name</label>
+        		<input type="text" class="form-control mb-3 bg-light" name="">
+
+        		<label class="form-label">Phone</label>
+        		<input type="text" class="form-control mb-3 bg-light" name="">
+
+        	</div>
+        	<div class="col-lg-6">
+        		<label class="form-label">Email Address</label>
+        		<input type="text" class="form-control mb-3 bg-light" name="">
+
+        		<label class="form-label">Your Price</label>
+        		<input type="text" class="form-control mb-3 bg-light" name="">
+
+        	</div>
+
+        	<div class="col-lg-12">
+        		<label class="form-label">Your Price</label>
+        		<textarea class="form-control bg-light" rows="7"></textarea>
+
+        		<button type="submit" class="submit-btn">Submit</button>
+        	</div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+					</div>
+
+					<div class="fielder-author">
+						<div class="author-img">
+							<img src="img/avatar.png">
+						</div>
+						<div class="author-name">
+							<h4>Mercy</h4>
+							<p>(0)</p>
+						</div>
+					</div>
+
+					<div class="safety-tips mb-5">
+						<h4 class="pb-4">Safety tips for deal</h4>
+						<p>1. Use a safe location to meet seller</p>
+						<p>2. Avoid cash transactions</p>
+						<p>3. Beware of unrealistic offers</p>
+					</div>
+
+				</div>
+			<!-- fielder-right-content End -->
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer area Start -->
+<footer class="footer-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="foot-content-1">
+					<img src="img/carbazaar.png">
+					<p>Discover a wide variety of quality new and used Cars in Kenya. Contact trusted sellers today on Kenya's safest Cars classifieds.</p>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="foot-content-2">
+					<h4>Follow Us</h4>
+					<p><i class="fab fa-facebook-f"></i> <span>Facebook</span></p>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="foot-content-3">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="#">Sell Your Car</a></li>
+						<li><a href="#">Register</a></li>
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">About Us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="foot-content-4">
+					<h4>Signup for Weekly Newsletter</h4>
+					<p>We may send you information about latest bargains, insurance tips and much more.</p>
+					<form action="">
+						<input type="email" name="">
+						<button type="submit">submit</button>
+					</form>
+					<p class="copyright">Copyright 2021 © CarBazaar Kenya Limited. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Footer area End -->
+
+<!-- All javascript file -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/dropzone.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/flexslider-min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/counterup.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
+<script src="js/jssor.slider-28.1.0.min.js"></script>
+<script src="js/main.js"></script>
+    <script type="text/javascript">
+        window.jssor_1_slider_init = function() {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:800,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $SpacingX: 5,
+                $SpacingY: 5
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+
+        // owl-carousel
+$('.owl-carousel').owlCarousel({
+    stagePadding: 0,
+    loop:true,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    },
+    //autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true
+});
+
+
+
+    </script>
+
+    <script type="text/javascript">jssor_1_slider_init();
+    </script>
+    <!-- #endregion Jssor Slider End -->
+
+
+</body>
+</html>

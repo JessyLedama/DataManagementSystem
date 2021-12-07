@@ -1,0 +1,17 @@
+
+
+.admin-adjust {
+    margin: 0 0 0 19%;
+}
+
+.ad
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .mobile {
+        display: block;
+    }
+}
