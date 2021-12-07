@@ -40,27 +40,27 @@
             </div>
 
             @guest()    
-                <a class="login-btn" href="{{ route('login') }}">Login</a>
-                <a class="register-btn" href="{{ route('register') }}">Register</a>
+                                        <a class="login-btn" href="{{ route('login') }}">Login</a>
+                                        <a class="register-btn" href="{{ route('register') }}">Register</a>
                                                     
-                @else
-                    <div class="d-flex">
-                        <li class="nav-item dropdown">
+                                    @else
+                                        <div class="d-flex">
+                                            <li class="nav-item dropdown">
 
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-user"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li>
-                                        <a class="dropdown-item" href="{{ route('profile') }}">Account </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="{{ route('logout') }}">Log Out</a>
-                                    </li>
-                            </ul>
-                        </li>
-                    </div>
-                @endguest
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-user"></i>
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li>
+                                                            <a class="dropdown-item" href="{{ route('profile') }}">Account </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="{{ route('logout') }}">Log Out</a>
+                                                        </li>
+                                                </ul>
+                                            </li>
+                                        </div>
+                                    @endguest
         </div>
     </nav>
 

@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('role');
             $table->string('status');
-            $table->string('user_type')->nullable();
+            $table->string('user_type')->null;
             $table->string('verification_code')->nullable();
             $table->string('profile')->nullable();
             $table->rememberToken();
