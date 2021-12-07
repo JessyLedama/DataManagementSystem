@@ -50,6 +50,21 @@ Route::post('/email/verification-notification', function (Request $request) {
     return back()->with('message', 'Verification link sent!');
 })->middleware(['auth', 'throttle:6,1'])->name('verification.send');
 
+//SEARCH CARS
+Route::get('/searchcars', [HomeController::class, 'searchCars'])->name('search-cars');
+
+Route::get('/post-searchcars', [HomeController::class, 'searchCarsPost'])->name('search-cars-post');
+
+//SELL CAR
+Route::get('/sellcar', [CarController::class, 'create'])->middleware(['auth'])->name('sell-car');
+
+Route::post('/store-sellcar', [CarController::class, 'store'])->middleware(['auth'])->name('sell-car-store');
+
+// CAR INSURANCE
+Route::post('/store-sellinsurance', [CarInsuranceController::class, 'store'])->name('sell-insurance-store');
+
+Route::get('/carinsurance', [UserController::class, 'carInsurance'])->name('car-insurance');
+
 //ABOUT US
 Route::get('/aboutus', [UserController::class, 'aboutUs'])->name('about-us');
 
@@ -58,6 +73,24 @@ Route::get('/contactus', [UserController::class, 'contactUs'])->name('contact-us
 
 Route::post('/store-contactus', [UserController::class, 'contactUsStore'])->name('contact-us-store');
 
+// VEHICLE TRANSFER (user)
+Route::get('/vehicle-transfer', [VehicleTransferController::class, 'create'])->middleware('auth')->name('vehicle-transfer-create');
+
+Route::post('/store-vehicle-transfer', [VehicleTransferController::class, 'store'])->middleware('auth')->name('vehicle-transfer-store');
+
+Route::get('/edit-vehicle-transfer', [VehicleTransferController::class, 'edit'])->middleware('auth')->name('vehicle-transfer-edit');
+
+Route::post('/update-vehicle-transfer', [VehicleTransferController::class, 'update'])->middleware('auth')->name('vehicle-transfer-update');
+
+// Logbook Car Search (user)
+Route::get('/create-logbook-car-search', [LogbookCarSearchController::class, 'create'])->name('logbook-car-search-create'); 
+
+Route::post('/store-logbook-car-search', [LogbookCarSearchController::class, 'store'])->name('logbook-car-search-store');
+
+// Mileage Verification (user)
+Route::get('/create-mileage-verification', [MileageVerificationController::class, 'create'])->middleware('auth')->name('mileage-verification-create');
+
+Route::post('store-mileage-verification', [MileageVerificationController::class, 'store'])->middleware('auth')->name('mileage-verification-store');
 
 // Send SMS (inactive user)
 Route::get('/send-sms', [UserController::class, 'sendSMS'])->middleware('auth')->name('send-sms');
@@ -105,8 +138,6 @@ Route::prefix('admin')->group(function()
     Route::get('/create-categories', [CategoryController::class, 'create'])->middleware('auth')->name('categories-create');
 
     Route::post('/store-categories', [CategoryController::class, 'store'])->middleware('auth')->name('categories-store');
-
-    Route::get('/edit-categories', [CategoryController::class, 'edit'])->middleware('auth')->name('categories-edit');
 
     //Cities
     Route::get('/cities', [CitiesController::class, 'index'])->middleware('auth')->name('cities-list');

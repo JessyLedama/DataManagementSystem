@@ -106,7 +106,7 @@ Route::prefix('admin')->group(function()
 
     Route::post('/store-categories', [CategoryController::class, 'store'])->middleware('auth')->name('categories-store');
 
-    Route::get('/edit-categories', [CategoryController::class, 'edit'])->middleware('auth')->name('categories-edit');
+    Route::get('/c-categories', [CategoryController::class, 'c'])->middleware('auth')->name('categories-c');
 
     //Cities
     Route::get('/cities', [CitiesController::class, 'index'])->middleware('auth')->name('cities-list');

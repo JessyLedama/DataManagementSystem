@@ -61,7 +61,7 @@ class AdminController extends Controller
      */
     public function edit($id)
     {
-        return view('admin.users.create');
+        return view('admin.settings.users.create');
     }
 
     /**
@@ -124,5 +124,30 @@ class AdminController extends Controller
         session()->flash('success', $user->name.' has been banned!');
 
         return back();
+    }
+
+    public function settings()
+    {
+        return view('admin.settings');
+    }
+
+    public function carInsuranceRequests()
+    {
+        return view('admin.car_insurance_requests');
+    }
+
+    public function vehicleTransferRequests()
+    {
+        return view('admin.vehicle_transfer_requests');
+    }
+
+    public function mileageVerificationRequests()
+    {
+        return view('admin.mileage_verification_requests');
+    }
+
+    public function logbookCarSearchRequests()
+    {
+        return view('admin.logbook_car_search_requests');
     }
 }

@@ -78,7 +78,7 @@
 
                             <td>
                                 <div class="manage-safari pull-right">
-                                    <a href="{{ route('categories-edit', $category) }}">
+                                    <a href="{{ route('cstegories-edit', $category) }}">
                                         <i class="lni-pencil-alt"></i>
                                         Edit
                                     </a>

@@ -94,7 +94,7 @@
               <!-- EDIT PROFILE -->
               <li class="nav-item">
                 <a href="{{ route('profile') }}" class="nav-link">
-                  <i class="fas fa-user-edit "></i>
+                  <i class="far fa-user-edit "></i>
                   <p>
                     Edit Profile
                   </p>

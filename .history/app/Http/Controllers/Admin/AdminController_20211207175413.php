@@ -125,4 +125,29 @@ class AdminController extends Controller
 
         return back();
     }
+
+    public function settings()
+    {
+        return view('admin.settings');
+    }
+
+    public function carInsuranceRequests()
+    {
+        return view('admin.car_insurance_requests');
+    }
+
+    public function vehicleTransferRequests()
+    {
+        return view('admin.vehicle_transfer_requests');
+    }
+
+    public function mileageVerificationRequests()
+    {
+        return view('admin.mileage_verification_requests');
+    }
+
+    public function logbookCarSearchRequests()
+    {
+        return view('admin.logbook_car_search_requests');
+    }
 }
