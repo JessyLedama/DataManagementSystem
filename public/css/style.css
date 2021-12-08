@@ -1599,7 +1599,7 @@ form label span{
 }
 
 .login-btn,.register-btn {
-    color: #fff;
+    color: #000;
     border: 1px solid #fff;
     padding: 0px 17px 0 12px;
     border-radius: 3px;

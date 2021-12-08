@@ -13,7 +13,45 @@
 
 <body>
   
+  <section data-bs-version="5.1" class="menu cid-s48OLK6784" once="menu" id="menu1-h">
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top collapsed">
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="/">
+                        <img src="{{ asset('img/logo.png') }}" alt="Mobirise" style="height: 8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7" href="/">DMS</a></span>
+            </div>
 
+            @guest()    
+                <a class="login-btn" href="{{ route('login') }}">Login</a>
+                <a class="register-btn" href="{{ route('register') }}">Register</a>
+                                                    
+                @else
+                    <div class="d-flex">
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route('profile') }}">Account </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route('logout') }}">Log Out</a>
+                                    </li>
+                            </ul>
+                        </li>
+                    </div>
+                @endguest
+        </div>
+    </nav>
+
+</section>
 
 <section data-bs-version="5.1" class="header1 cid-s48MCQYojq mbr-fullscreen mbr-parallax-background" id="header1-f">
     

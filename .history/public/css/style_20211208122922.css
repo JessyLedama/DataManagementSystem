@@ -1598,6 +1598,23 @@ form label span{
     display: block;
 }
 
+.login-btn,.register-btn {
+    color: #000;
+    border: 1px solid #fff;
+    padding: 0px 17px 0 12px;
+    border-radius: 3px;
+    line-height: 37px;
+    transition: .3s ease-out;
+    margin-right: 5px;
+}
+.register-btn{
+    margin-right: 0px;
+}
+.login-btn:hover,.register-btn:hover{
+    background: #fff;
+    color: #007EE5;
+    transition: .3s ease-out;
+}
 
 
 
